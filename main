@@ -1,0 +1,20 @@
+public class Mergerr1
+  {  public
+        static int a[]=new int [10];
+	static int n;	 
+       public static void main(String args[])throws IOException
+       {
+	DataInputStream d=new DataInputStream(System.in);
+	System.out.println("Enter number of elements   :  ");
+	n=Integer.parseInt(d.readLine());//n denotes the limit
+	System.out.println("Enter elements   :  ");
+	for(int i=1;i<=n;i++)
+	{
+	  a[i]=Integer.parseInt(d.readLine()); //numbers are inserted in an array named a  
+      	}
+    
+	mergeSort(1,n);
+        System.out.println("\nThe sorted array is    :  ");//displays the result i.e sorted array
+        display(1,n);
+ 
+      } 
